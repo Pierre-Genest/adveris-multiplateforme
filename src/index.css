@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-grotesque: "Darker Grotesque", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #020017;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.w-10 { width: 10%; }
+.w-50 { width: 50%; }
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.dvh-80 { height: 80dvh; }
