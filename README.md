@@ -88,16 +88,16 @@ cp .env.exemple .env.local
 
 ---
 
-## Development
+## Development  (navigateur web fonctionnalités rust non incluse)
 
 ```bash
 pnpm tauri dev
 ```
 
-## Build
+## Build (réelle application avec fonctionnalité rust incluse)
 
 ```bash
-pnpm tauri build
+pnpm tauri:build
 ```
 
 The distributable installer/bundle is output to `src-tauri/target/release/bundle/`.
